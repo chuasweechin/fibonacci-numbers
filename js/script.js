@@ -51,7 +51,7 @@ var draw = function (list) {
 function fibonacciV2(n) {
     if (n === 1 || n === 2) return 1;
 
-    return fibonacci(n - 2) + fibonacci(n - 1);
+    return fibonacciV2(n - 2) + fibonacciV2(n - 1);
 }
 
 draw(fibonacci(10,true));
